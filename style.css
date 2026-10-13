@@ -207,3 +207,15 @@ body>main{flex:1 0 auto;width:100%}
 .sof figure{margin:0;display:grid;gap:10px}
 .sof img{width:100%;height:auto}
 .sof figcaption{color:var(--wash)}
+
+/* phones: the menu folds into one button */
+.menu-btn{display:none}
+@media (max-width:720px){
+  .bar .wrap{flex-wrap:wrap;align-content:flex-start;column-gap:16px;row-gap:0}
+  .js .menu-btn{display:inline-flex;align-items:center;min-height:44px;margin-left:auto;padding:0;border:0;background:none;color:var(--band-ink);font:inherit;cursor:pointer;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+  .js .bar nav{display:none;flex-direction:column;width:100%;margin:0;padding-block:4px 12px}
+  .js .bar.is-open nav{display:flex}
+  .js .bar nav a{padding:12px 0;min-height:44px;border-top:1px solid color-mix(in srgb,var(--band-ink) 25%,transparent)}
+  .js .bar nav a[aria-current="page"]{text-decoration:none}
+  .js .bar nav a[aria-current="page"]::after{content:"\00a0\00a0←"}
+}

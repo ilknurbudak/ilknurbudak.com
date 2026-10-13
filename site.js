@@ -22,3 +22,11 @@
     if(e.key==='ArrowRight'&&next)location.href=next.href;
   });
 })();
+
+(function(){
+  var bar=document.querySelector('.bar'),b=bar&&bar.querySelector('.menu-btn');
+  if(!b)return;
+  function set(o){bar.classList.toggle('is-open',o);b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'close':'menu';}
+  b.addEventListener('click',function(){set(!bar.classList.contains('is-open'));});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&bar.classList.contains('is-open')){set(false);b.focus();}});
+})();
