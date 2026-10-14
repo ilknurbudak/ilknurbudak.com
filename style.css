@@ -224,4 +224,4 @@ body>main{flex:1 0 auto;width:100%}
   .js .bar nav a[aria-current="page"]::after{content:"\00a0\00a0←"}
 }
 
-.entry audio{display:block;width:100%;max-width:420px;height:40px}
+.entry audio{display:block;width:100%;max-width:420px;height:40px;margin-bottom:20px}
