@@ -269,6 +269,8 @@ main:has(> .archive) .hang{grid-template-columns:repeat(3,minmax(0,1fr));column-
 main:has(> .archive) .hang .piece{grid-column:auto !important;margin:0 !important;display:grid;gap:8px}
 main:has(> .archive) .hang .piece img{width:100%;aspect-ratio:4/5;object-fit:contain;object-position:left bottom;height:auto}
 main:has(> .archive) .hang .side{grid-template-columns:minmax(0,1fr)}
+main:has(> .archive) .hang .piece video{width:100%;aspect-ratio:4/5;object-fit:contain;object-position:left bottom;height:auto;background:transparent}
+.pv{scroll-margin-top:72px}
 main:has(> .archive) .folder-piece .folder{aspect-ratio:4/5;display:flex;align-items:flex-end}
 main:has(> .archive) .folder-piece svg{width:45%}
 @media (max-width:900px){main:has(> .archive) .hang{grid-template-columns:repeat(2,minmax(0,1fr))}}
