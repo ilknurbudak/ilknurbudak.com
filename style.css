@@ -183,7 +183,7 @@ h1,h2,.open h1,.who{font-weight:500}
 
 /* top and bottom bars: Aegean blue band, white type */
 :root{--band:#41789f;--band-ink:#ffffff}
-.bar{background:var(--band);border-bottom:0;color:var(--band-ink)}
+.bar{background:#111;border-bottom:0;color:var(--band-ink)}
 .bar a,.bar a:hover{color:var(--band-ink)}
 .bar nav a:hover{opacity:.75}
 .who img{filter:invert(1)}
