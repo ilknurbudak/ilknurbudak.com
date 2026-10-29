@@ -1,13 +1,13 @@
 /* palette: paper white ground, beach-pebble greys for text and lines.
    layout: a quiet exhibition hang on a 12-column wall, an archive register for the index, one work per page in the catalogue */
 :root{
-  --paper:#fafaf9;--ink:#2a2926;--wash:#6f6a63;--rule:#dedbd5;--mat:#eceae6;--face-filter:none;
+  --paper:#000000;--ink:#e7e3db;--wash:#9a948a;--rule:#2a2a28;--mat:#141414;--face-filter:invert(1);color-scheme:dark;
   --f-body:"Newsreader",Georgia,"Times New Roman",serif;
   --f-label:"Geist Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
   --gutter:clamp(16px,4vw,56px);--name:clamp(1.9rem,4.6vw,4rem);
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#1f201d;--ink:#e7e3db;--wash:#a59e93;--rule:#393a35;--mat:#2b2c28;--face-filter:invert(1);color-scheme:dark}}
-:root[data-theme="dark"]{--paper:#1f201d;--ink:#e7e3db;--wash:#a59e93;--rule:#393a35;--mat:#2b2c28;--face-filter:invert(1);color-scheme:dark}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#000000;--ink:#e7e3db;--wash:#9a948a;--rule:#2a2a28;--mat:#141414;--face-filter:invert(1);color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#000000;--ink:#e7e3db;--wash:#9a948a;--rule:#2a2a28;--mat:#141414;--face-filter:invert(1);color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
@@ -182,8 +182,8 @@ h1,h2,.open h1,.who{font-weight:500}
 .open h1{line-height:1.2}
 
 /* top and bottom bars: Aegean blue band, white type */
-:root{--band:#111;--band-ink:#ffffff}
-.bar{background:#111;border-bottom:0;color:var(--band-ink)}
+:root{--band:#000000;--band-ink:#ffffff}
+.bar{background:#000000;border-bottom:1px solid var(--rule);color:var(--band-ink)}
 .bar a,.bar a:hover{color:var(--band-ink)}
 .bar nav a:hover{opacity:.75}
 .who img{filter:invert(1)}
